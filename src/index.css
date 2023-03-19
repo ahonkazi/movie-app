@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply text-rose-500;
+}
+
+html{
+  @apply scrollbar-thin scrollbar-track-slate-900 scrollbar-thumb-slate-800;
+}
+
+
+.carousel-status{
+  @apply hidden;
+}

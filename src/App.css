@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+
+
+.slide .movie-name {
+    opacity: 0;
+}
+
+.slide.selected .movie-name {
+    animation: slide-top 1s ease-in-out forwards;
+}
+
+.slide .slide-left {
+    opacity: 0;
+}
+
+.slide.selected .slide-left {
+    animation: slide-top 1s ease-in-out forwards;
+}
+
+.slide .rating-box {
+    opacity: 0;
+}
+
+.slide.selected .rating-box {
+    animation: slide-top 1.5s ease-in-out forwards;
+}
+
+.slide .discription {
+    opacity: 0;
+}
+
+.slide.selected .discription {
+    animation: slide-bottom 1.5s ease-in-out forwards;
+}
+
+.slide .overlay {
+    opacity: 0.5;
+}
+
+.slide.selected .overlay {
+    animation: makeOpacity 1.5s ease-in-out forwards;
+}
+
+
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes makeOpacity {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-bottom {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.react-multi-carousel-item{
+    padding: 0px 10px;
+    transition: all 300ms;
+}
